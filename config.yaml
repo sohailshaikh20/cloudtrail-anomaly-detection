@@ -1,0 +1,44 @@
+# Central settings. Code reads from here instead of hard-coding values.
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  features_file: "data/processed/features.parquet"
+  labels_file: "data/processed/labels.parquet"
+  results_dir: "results"
+  figures_dir: "results/figures"
+
+dataset:
+  url: "http://summitroute.com/downloads/flaws_cloudtrail_logs.tar"
+  archive_name: "flaws_cloudtrail_logs.tar"
+  md5: "4f0481c6be700ffc7610dbbf8cee5578"
+  expected_events: 1939207
+
+features:
+  session_gap_minutes: 30
+
+tier1_rules:
+  error_rate_threshold: 0.30
+  api_burst_per_minute: 50
+  sensitive_events:
+    - "AttachRolePolicy"
+    - "AssumeRole"
+    - "CreateAccessKey"
+    - "PutUserPolicy"
+    - "DeleteTrail"
+
+tier2_isolation_forest:
+  n_estimators: 200
+  contamination: "auto"
+  random_state: 42
+
+tier3_xgboost:
+  n_estimators: 400
+  max_depth: 6
+  learning_rate: 0.05
+  random_state: 42
+
+evaluation:
+  test_size: 0.30
+  random_state: 42
+  drift_split_date: "2019-01-01"
