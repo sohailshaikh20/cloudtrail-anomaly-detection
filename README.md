@@ -52,7 +52,7 @@ public real-world CloudTrail dataset. Not committed to the repo — run
 ## Progress
 
 - [x] Phase 0 — Environment & repo skeleton
-- [ ] Phase 1 — Data acquisition & validation
+- [x] Phase 1 — Data acquisition & validation
 - [ ] Phase 2 — Parsing & feature engineering
 - [ ] Phase 3 — Heuristic labelling
 - [ ] Phase 4 — Three-tier detection
