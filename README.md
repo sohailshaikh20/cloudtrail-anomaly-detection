@@ -1,6 +1,6 @@
 # Explainable and Adaptive AI-Driven Anomaly Detection for AWS CloudTrail Logs
 
-Capstone thesis — MSc Computer Science (Adaptive Cybersecurity), University of Galway.
+Capstone thesis - MSc Computer Science (Adaptive Cybersecurity), University of Galway.
 Supervisor: Dr. Malika Bendechache.
 
 A three-tier anomaly-detection pipeline for AWS CloudTrail audit logs, augmented
@@ -45,7 +45,7 @@ python src/download_data.py
 ## Dataset
 
 flaws.cloud CloudTrail logs by Scott Piper (Summit Route): ~1.94M events,
-Feb 2017 – Oct 2020, 9,402 unique IPs, 1,242 distinct AWS APIs. The only known
+Feb 2017 - Oct 2020, 9,402 unique IPs, 1,242 distinct AWS APIs. The only known
 public real-world CloudTrail dataset. Not committed to the repo — run
 `src/download_data.py` to fetch it.
 
@@ -53,9 +53,9 @@ public real-world CloudTrail dataset. Not committed to the repo — run
 
 - [x] Phase 0 — Environment & repo skeleton
 - [x] Phase 1 — Data acquisition & validation
-- [ ] Phase 2 — Parsing & feature engineering
-- [ ] Phase 3 — Heuristic labelling
-- [ ] Phase 4 — Three-tier detection
+- [x] Phase 2 — Parsing & feature engineering
+- [x] Phase 3 — Heuristic labelling
+- [x] Phase 4 — Three-tier detection
 - [ ] Phase 5 — SHAP explainability
 - [ ] Phase 6 — Evaluation & concept-drift experiment
 
