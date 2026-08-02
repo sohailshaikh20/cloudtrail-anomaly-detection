@@ -1,0 +1,27 @@
+(1) GLOBAL ranking stability across 10 random subsamples
+    (Spearman rank correlation of feature importance order; 1.0 = identical)
+
+    mean pairwise Spearman : 1.000
+    min  pairwise Spearman : 1.000
+    max  pairwise Spearman : 1.000
+
+    average feature rank across runs (1 = most important):
+      iam_escalation_flag   1.0
+      api_diversity         2.0
+      n_source_ips          3.0
+      api_calls_per_min     4.0
+      n_regions             5.0
+      write_read_ratio      6.0
+      api_call_count        7.0
+      error_rate            8.0
+      night_fraction        9.0
+
+    => Global ranking is HIGHLY STABLE (mean Spearman 1.000).
+
+(2) LOCAL explanation stability under small perturbations
+    (does each session's TOP feature stay the same after +-2% noise?)
+
+    top-feature agreement after perturbation : 87.1%
+    => Local explanations are STABLE.
+
+Saved figure -> /Users/sohail/Desktop/cloudtrail-anomaly-detection/results/figures/shap_stability_global.png
