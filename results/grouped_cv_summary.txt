@@ -1,0 +1,13 @@
+Tier 3 grouped cross-validation  (5-fold, 57 actors)
+
+  Reporting mean ± std across folds.
+
+  A) random  (k-fold)   prec=0.979±0.003  reca=0.975±0.004  f1=0.977±0.002  auro=0.993±0.002
+  B) grouped (k-fold)   prec=0.725±0.437  reca=0.650±0.400  f1=0.663±0.381  auro=0.685±nan
+
+  mean drop random -> grouped:  F1 -0.313   AUROC -0.308
+
+  Interpretation:
+   Large, consistent drop across folds => identity leakage is ROBUST,
+   not a single-split artefact. Report grouped numbers as honest
+   supervised performance; the gap is the methodological finding.
