@@ -1,0 +1,14 @@
+Unsupervised evaluation (leakage-free) — evaluated on labelled sessions
+  sessions scored: 5,348
+
+  Isolation Forest     AUROC = 0.797
+  Extended IF          AUROC = 0.852
+
+  Isolation Forest     Average Precision = 0.859
+  Extended IF          Average Precision = 0.870
+
+  PR baseline (attack prevalence) = 0.700
+
+Saved:
+  /Users/sohail/Desktop/cloudtrail-anomaly-detection/results/figures/roc_unsupervised.png
+  /Users/sohail/Desktop/cloudtrail-anomaly-detection/results/figures/pr_unsupervised.png
