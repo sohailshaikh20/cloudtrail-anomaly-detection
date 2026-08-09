@@ -1,0 +1,6 @@
+tier,model,precision,recall,f1,auroc,ap,note
+Tier 1,Rule-based,0.4562334217506631,0.3218390804597701,0.3774294670846395,,,Baseline floor
+Tier 2,Isolation Forest,0.8662207357859532,0.20769847634322375,0.3350582147477361,0.7973633297387284,0.8592112705471355,"Unsupervised, leakage-free"
+Tier 2,Extended IF,0.8400447427293065,0.20074846297781343,0.32405609492988136,0.8520827501040873,0.8704026279418005,Best unsupervised; beats IF
+Tier 3,XGBoost (random split),,,,,,INFLATED by identity leakage - not the honest number
+Tier 3,XGBoost (grouped CV),,,,,,Honest eval - see grouped_cv_summary.txt (large variance)
