@@ -1,0 +1,15 @@
+Concept-drift experiment (temporal split at 2019-01-01)
+
+  train period (before): 2,533 sessions (68% attack)
+  test  period (after) : 2,815 sessions (72% attack)
+
+  evaluation                     AUROC      AP
+  ----------------------------------------------
+  fit before / score before      0.860   0.871
+  fit before / score after       0.669   0.820
+
+  drift gap (AUROC): +0.191
+  => Performance DROPS on later data: concept drift is present,
+     motivating periodic re-fitting / the adaptive component.
+
+Saved -> /Users/sohail/Desktop/cloudtrail-anomaly-detection/results/figures/concept_drift.png
