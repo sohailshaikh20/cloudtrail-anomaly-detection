@@ -1,0 +1,14 @@
+Statistical significance: IF vs EIF across 20 random seeds
+
+  Isolation Forest  AUROC = 0.8102 +/- 0.0160  (95% CI +/-0.0075)
+  Isolation Forest  AP    = 0.8636 +/- 0.0066
+  Extended IF       AUROC = 0.8562 +/- 0.0004  (95% CI +/-0.0002)
+  Extended IF       AP    = 0.8716 +/- 0.0003
+
+  mean AUROC difference (EIF - IF) = +0.0460
+  paired t-test:      t = 12.910, p = 7.46e-11
+  Wilcoxon test:      p = 1.91e-06
+  Cohen's d (paired): 2.89
+
+  => The EIF advantage over IF is STATISTICALLY SIGNIFICANT (p < 0.05),
+     consistent across seeds. The single-run result is confirmed.
