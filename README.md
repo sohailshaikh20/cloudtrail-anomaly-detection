@@ -56,8 +56,8 @@ public real-world CloudTrail dataset. Not committed to the repo — run
 - [x] Phase 2 — Parsing & feature engineering
 - [x] Phase 3 — Heuristic labelling
 - [x] Phase 4 — Three-tier detection
-- [ ] Phase 5 — SHAP explainability
-- [ ] Phase 6 — Evaluation & concept-drift experiment
+- [x] Phase 5 — SHAP explainability
+- [x] Phase 6 — Evaluation & concept-drift experiment
 
 ## Use of AI
 
